@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1083880925309",
+    "firebase_url": "https://reco-3b7a9.firebaseio.com",
+    "project_id": "reco-3b7a9",
+    "storage_bucket": "reco-3b7a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083880925309:android:91907192eb5aae99",
+        "android_client_info": {
+          "package_name": "com.example.reco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083880925309-8ej23uvji1n59ceum2hf1umpjgji27gt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reco",
+            "certificate_hash": "03d8318496596ac5e8d563f22f3ab5cb1afd3c0a"
+          }
+        },
+        {
+          "client_id": "1083880925309-96kkff94nradle5v7oubcp53s8lks9g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDleFK4ZxORrnuG9yD2ZvQLtbEiZP7fVgI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083880925309-96kkff94nradle5v7oubcp53s8lks9g6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
