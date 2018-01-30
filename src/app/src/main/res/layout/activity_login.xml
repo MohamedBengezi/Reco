@@ -41,11 +41,12 @@
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_name"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
-                    android:drawableLeft="@drawable/ic_action_name"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:visibility="gone" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -58,14 +59,15 @@
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_password"
                     android:hint="@string/prompt_password"
                     android:imeActionId="6"
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
-                    android:drawableLeft="@drawable/ic_password"
                     android:inputType="textPassword"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:visibility="gone" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -75,19 +77,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:background="#000000"
+                android:onClick="buttonPressed"
                 android:text="@string/action_sign_in"
                 android:textColor="#ffffff"
-                android:background="#000000"
                 android:textStyle="bold"
-                android:onClick="buttonPressed"/>
+                android:visibility="gone" />
 
             <com.facebook.login.widget.LoginButton
                 android:id="@+id/login_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp" />
+                android:layout_gravity="center"
+                android:layout_marginBottom="190dp"
+                android:layout_marginTop="190dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="@string/login_note" />
 
 
         </LinearLayout>
