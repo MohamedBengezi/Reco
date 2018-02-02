@@ -7,4 +7,29 @@
     android:background="@drawable/gradient"
     tools:context="com.example.reco.HomepageActivity">
 
+
+    <ImageButton
+        android:id="@+id/upload_button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/upload_but"
+        android:paddingBottom="0dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <TextView
+        android:id="@+id/upload_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/upload_button"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+
 </android.support.constraint.ConstraintLayout>
