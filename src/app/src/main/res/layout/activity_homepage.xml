@@ -7,29 +7,51 @@
     android:background="@drawable/gradient"
     tools:context="com.example.reco.HomepageActivity">
 
-
-    <ImageButton
-        android:id="@+id/upload_button"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@drawable/upload_but"
-        android:paddingBottom="0dp"
-        android:paddingEnd="0dp"
-        android:paddingStart="0dp"
-        android:paddingTop="0dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="57dp" />
-
-    <TextView
-        android:id="@+id/upload_caption"
+    <LinearLayout
+        android:id="@+id/email_login_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/upload_button"
-        android:textColor="@color/colorAccent"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="143dp" />
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="72dp">
+
+        <ImageButton
+            android:id="@+id/upload_button"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/upload_but"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="57dp" />
+
+        <TextView
+            android:id="@+id/upload_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="@string/upload_button"
+            android:textColor="@color/colorAccent" />
+
+        <ImageButton
+            android:id="@+id/camera_button"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_action_name"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="57dp" />
+
+        <TextView
+            android:id="@+id/camera_caption"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/camera_button"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>
