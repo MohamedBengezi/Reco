@@ -11,6 +11,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.facebook.login.LoginManager;
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -79,5 +82,12 @@ public class HomepageActivity extends AppCompatActivity {
 
     public void takePicture(View view) {
         dispatchTakePictureIntent();
+    }
+
+    public void signOut(View view) {
+        FirebaseAuth.getInstance().signOut();
+        LoginManager.getInstance().logOut();
+        Intent log_in_intent = new Intent(HomepageActivity.this, LoginActivity.class);
+        startActivity(log_in_intent);
     }
 }
