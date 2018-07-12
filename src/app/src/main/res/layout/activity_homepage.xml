@@ -24,14 +24,15 @@
             android:onClick="signOut"
             />
     </RelativeLayout>
+
     <LinearLayout
         android:id="@+id/email_login_form"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="-40dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="72dp"
-        android:layout_marginTop="30dp">
+        tools:layout_editor_absoluteY="72dp">
 
         <ImageButton
             android:id="@+id/upload_button"
@@ -40,33 +41,42 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/upload_but"
             tools:layout_editor_absoluteX="155dp"
-            tools:layout_editor_absoluteY="57dp" />
+            tools:layout_editor_absoluteY="14dp" />
 
         <TextView
             android:id="@+id/upload_caption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginBottom="50dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="@string/upload_button"
             android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/upload_image"
+            android:layout_marginTop="-40dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal" />
+
 
         <ImageButton
             android:id="@+id/camera_button"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
             android:background="@drawable/ic_action_name"
+            android:onClick="takePicture"
             tools:layout_editor_absoluteX="155dp"
-            tools:layout_editor_absoluteY="57dp"
-            android:onClick="takePicture"/>
+            tools:layout_editor_absoluteY="57dp" />
 
         <TextView
             android:id="@+id/camera_caption"
             android:layout_width="match_parent"
-            android:layout_marginTop="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
             android:gravity="center"
             android:text="@string/camera_button"
             android:textColor="@color/colorAccent" />
